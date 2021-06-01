@@ -1,0 +1,8 @@
+./node_modules
+./build
+./src
+./webpack.dev.js
+./webpack.prod.js
+./tsconfig.json
+./package-lock.json
+./gitignore
