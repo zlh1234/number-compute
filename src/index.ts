@@ -6,20 +6,20 @@ class Compute {
 
 	/**
 	 * 构造函数
-	 * @param v 初始数值
+	 * @param value 初始数值
 	 */
-	constructor(v?: number) {
-		this.val = v || 0;
+	constructor(value?: number) {
+		this.val = value || 0;
 		this.current = 0;
 		this.x = 1;
 	}
 
 	/**
 	 * 计算前设置当前传入的数值和x的值
-	 * @param v 当前传入的数值
+	 * @param value 当前传入的数值
 	 */
-	private setValidate(v) {
-		this.current = validateNumber(v);
+	private setValidate(value) {
+		this.current = validateNumber(value);
 		this.x = getLength(this.val, this.current);
 	}
 
@@ -34,8 +34,8 @@ class Compute {
 	/**
 	 * 加法
 	 */
-	public add(v: number) {
-		this.setValidate(v);
+	public add(value: number) {
+		this.setValidate(value);
 		this.val = (this.val * this.x + this.current * this.x) / this.x;
 		return this;
 	}
@@ -43,8 +43,8 @@ class Compute {
 	/**
 	 * 减法
 	 */
-	public minus(v: number) {
-		this.setValidate(v);
+	public minus(value: number) {
+		this.setValidate(value);
 		this.val = (this.val * this.x - this.current * this.x) / this.x;
 		return this;
 	}
@@ -52,8 +52,8 @@ class Compute {
 	/**
 	 * 乘法
 	 */
-	public multiply(v: number) {
-		this.setValidate(v);
+	public multiply(value: number) {
+		this.setValidate(value);
 		this.val =
 			(this.val * this.x * (this.current * this.x)) / Math.pow(this.x, 2);
 		return this;
@@ -62,8 +62,8 @@ class Compute {
 	/**
 	 * 除法
 	 */
-	public divide(v: number) {
-		this.setValidate(v);
+	public divide(value: number) {
+		this.setValidate(value);
 		this.val = (this.val * this.x) / (this.current * this.x);
 		return this;
 	}

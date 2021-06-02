@@ -1,8 +1,12 @@
 {
 	"name": "number-compute",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "解决js计算小数点精度丢失",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist/**/*"
+	],
 	"scripts": {
 		"dev": "webpack serve --config webpack.dev.js",
 		"build": "webpack --progress --config webpack.prod.js"

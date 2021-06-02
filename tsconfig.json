@@ -6,6 +6,7 @@
 		"baseUrl": ".",
 		"rootDir": ".",
 		"allowJs": true,
+		"declaration": true,
 		"experimentalDecorators": true,
 		// 路径别名
 		"paths": {

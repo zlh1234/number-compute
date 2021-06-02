@@ -9,6 +9,8 @@ module.exports = (env) => {
 			// 打包文件根目录
 			path: path.resolve(__dirname, 'dist/'),
 			filename: 'index.js',
+			library: 'Compute', // 指定类库名,主要用于直接引用的方式
+			libraryTarget: 'umd', //定义打包方式Universal Module Definition,同时支持在CommonJS、AMD和全局变量使用
 		},
 		plugins: [new uglify(), new CleanWebpackPlugin()],
 		module: {
