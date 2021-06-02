@@ -36,6 +36,10 @@ class Compute {
 	 */
 	public add(value: number) {
 		this.setValidate(value);
+		// console.log(this.val);
+		// console.log(this.current);
+		// console.log(this.x);
+
 		this.val = (this.val * this.x + this.current * this.x) / this.x;
 		return this;
 	}
@@ -78,4 +82,5 @@ export default Compute;
 // let c = new Compute(0.1).add(0.2).done();
 
 // let c = new Compute(0.1).add(new Compute(6).divide(2).done()).done();
-// console.log(c);
+let c = new Compute(0.123456).add(0.00000001).done();
+console.log(c);
