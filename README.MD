@@ -1,3 +1,5 @@
+###### github 地址：[number-compute](https://github.com/zlh1234/number-compute)
+
 #### 1. 使用
 
 ```bash
