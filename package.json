@@ -1,6 +1,6 @@
 {
 	"name": "number-compute",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "解决js计算小数点精度丢失",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
