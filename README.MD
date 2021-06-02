@@ -1,10 +1,13 @@
 #### 1. 使用
 
+```bash
+# npm
 npm i number-compute -S
-或者 yarn
+# yarn
 yarn add number-compute
-
 ```
+
+```jsx
 //引入
 import Compute from 'number-compute';
 
@@ -16,7 +19,7 @@ let val = new Compute(1).add(1).done();
 
 ##### (1) 经典计算题 0.1+0.2
 
-```
+```jsx
 //在浏览器中 0.1+0.2 = 0.30000000000000004
 
 //使用number compute
@@ -28,7 +31,7 @@ let val = new Compute(0.1).add(0.2).done();
 
 ##### (2) 优先计算值 (0.1+0.2)\*0.2
 
-```
+```jsx
 //在浏览器中 (0.1+0.2)*0.2 = 0.06000000000000001
 
 //使用number compute
@@ -40,7 +43,7 @@ let val = new Compute(new Compute(0.1).add(0.2).done()).multiply(0.2).done();
 
 ##### (3) 小数点较多的计算 0.123456 + 0.00000001
 
-```
+```jsx
 //在浏览器中 0.123456+0.00000001 = 0.12345600999999999
 
 //使用number compute
