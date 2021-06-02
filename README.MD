@@ -7,7 +7,7 @@ npm i number-compute -S
 yarn add number-compute
 ```
 
-```jsx
+```tsx
 //引入
 import Compute from 'number-compute';
 
@@ -19,7 +19,7 @@ let val = new Compute(1).add(1).done();
 
 ##### (1) 经典计算题 0.1+0.2
 
-```jsx
+```tsx
 //在浏览器中 0.1+0.2 = 0.30000000000000004
 
 //使用number compute
@@ -31,7 +31,7 @@ let val = new Compute(0.1).add(0.2).done();
 
 ##### (2) 优先计算值 (0.1+0.2)\*0.2
 
-```jsx
+```tsx
 //在浏览器中 (0.1+0.2)*0.2 = 0.06000000000000001
 
 //使用number compute
@@ -43,7 +43,7 @@ let val = new Compute(new Compute(0.1).add(0.2).done()).multiply(0.2).done();
 
 ##### (3) 小数点较多的计算 0.123456 + 0.00000001
 
-```jsx
+```tsx
 //在浏览器中 0.123456+0.00000001 = 0.12345600999999999
 
 //使用number compute
@@ -55,10 +55,10 @@ let val = new Compute(0.123456).add(0.00000001).done();
 
 #### 3. 相关 API
 
-| 名称     | 类型 | 描述                           |
-| :------- | :--- | :----------------------------- |
-| add      | Func | 加法                           |
-| minus    | Func | 减法                           |
-| multiply | Func | 乘法                           |
-| divide   | Func | 除法                           |
-| done     | Func | 完成计算，此时返回计算后的数值 |
+| 名称     | 类型                   | 描述                           |
+| :------- | :--------------------- | :----------------------------- |
+| add      | `(val:number) => this` | 加法                           |
+| minus    | `(val:number) => this` | 减法                           |
+| multiply | `(val:number) => this` | 乘法                           |
+| divide   | `(val:number) => this` | 除法                           |
+| done     | `() => number`         | 完成计算，此时返回计算后的数值 |
