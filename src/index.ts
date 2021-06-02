@@ -82,5 +82,5 @@ export default Compute;
 // let c = new Compute(0.1).add(0.2).done();
 
 // let c = new Compute(0.1).add(new Compute(6).divide(2).done()).done();
-let c = new Compute(0.123456).add(0.00000001).done();
-console.log(c);
+// let c = new Compute(0.123456).add(0.00000001).done();
+// console.log(c);
