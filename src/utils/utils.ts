@@ -4,7 +4,6 @@
  */
 export const getOriNum = (num: number) => {
 	if (/\d(?:\.(\d*))?e([+-]\d+)/.test(num.toString())) {
-		console.log(11);
 		let m: any = num.toString().match(/\d(?:\.(\d*))?e([+-]\d+)/);
 		return num.toFixed(Math.max(0, (m[1] || '').length - m[2]));
 	}
